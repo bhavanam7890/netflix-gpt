@@ -2,14 +2,20 @@ import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
-import './App.css';
+import Body from './components/Body';
+import Browse from './components/Browse';
+import Login from './components/Login';
+
 
 function App() {
+
   return (
-  <div className="text-3xl font-bold text-green-800">
-    Namaste Everyone, let's build Netflix GPT
-  </div>
+    <div>
+      <Login /> 
+      <Browse />
+      
+    </div>
   );
-}
+};
 
 export default App;
